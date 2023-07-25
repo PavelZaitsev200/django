@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
@@ -7,3 +6,4 @@ def index(request):
 
 def top_sellers(request):
     return render(request, 'top-sellers.html')
+
