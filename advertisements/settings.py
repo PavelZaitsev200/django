@@ -50,8 +50,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
 ROOT_URLCONF = 'advertisements.urls'
+
+MEDIA_ROOT = Path.joinpath(BASE_DIR, 'media/')
 
 TEMPLATES = [
     {
@@ -79,6 +80,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+      
     }
 }
 
